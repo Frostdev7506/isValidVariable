@@ -1,0 +1,39 @@
+{
+  "name": "isvalidvariable",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A simple function to check if a variable is valid (not null, undefined, or an empty string).",
+  "keywords": [
+    "validation",
+    "variable",
+    "javascript",
+    "utility",
+    "is-valid",
+    "check-variable"
+  ],
+  "author": "Frostdev",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/isvalidvariable.git"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.esm.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.25.0"
+  }
+}
