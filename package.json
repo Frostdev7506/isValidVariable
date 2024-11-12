@@ -1,39 +1,39 @@
 {
   "name": "isvalidvariable",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "A simple function to check if a variable is valid (not null, undefined, or an empty string).",
-  "keywords": [
-    "validation",
-    "variable",
-    "javascript",
-    "utility",
-    "is-valid",
-    "check-variable"
-  ],
-  "author": "Frostdev",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/your-username/isvalidvariable.git"
-  },
-  "main": "dist/index.cjs",
-  "module": "dist/index.esm.js",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.esm.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "version": "1.0.4",
+  "description": "Checks if a string is a valid JavaScript variable name.",
+  "main": "dist/index.js",
+  "module": "index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "npm run build"
   },
-  "dependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^4.25.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanThatOneKid/isValidVariable.git"
+  },
+  "keywords": [
+    "javascript",
+    "variable",
+    "validation",
+    "regex"
+  ],
+  "author": "Neeraj Butola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EthanThatOneKid/isValidVariable/issues"
+  },
+  "homepage": "https://github.com/EthanThatOneKid/isValidVariable#readme",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "babel-jest": "^29.6.1",
+    "jest": "^29.6.1",
+    "rollup": "^3.26.3"
   }
 }
