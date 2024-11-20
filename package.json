@@ -1,6 +1,6 @@
 {
-  "name": "isvalidvariable",
-  "version": "1.0.4",
+  "name": "isvalidvariable.js",
+  "version": "1.0.2",
   "description": "Checks if a string is a valid JavaScript variable name.",
   "main": "dist/index.js",
   "module": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EthanThatOneKid/isValidVariable.git"
+    "url": "git+https://github.com/Frostdev7506/isValidVariable.git"
   },
   "keywords": [
     "javascript",
@@ -24,14 +24,15 @@
   "author": "Neeraj Butola",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EthanThatOneKid/isValidVariable/issues"
+    "url": "https://github.com/Frostdev7506/isValidVariable/issues"
   },
-  "homepage": "https://github.com/EthanThatOneKid/isValidVariable#readme",
+  "homepage": "https://github.com/Frostdev7506/isValidVariable#readme",
   "type": "module",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "babel-jest": "^29.6.1",
     "jest": "^29.6.1",
     "rollup": "^3.26.3"
