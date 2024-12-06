@@ -1,9 +1,9 @@
 {
   "name": "isvalidvariable.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Checks if a string is a valid JavaScript variable name.",
-  "main": "dist/index.js",
-  "module": "index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
@@ -11,23 +11,23 @@
     "test:watch": "jest --watch",
     "prepare": "npm run build"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Frostdev7506/isValidVariable.git"
   },
-  "keywords": [
-    "javascript",
-    "variable",
-    "validation",
-    "regex"
-  ],
+  "keywords": ["javascript", "variable", "validation", "regex"],
   "author": "Neeraj Butola",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Frostdev7506/isValidVariable/issues"
   },
   "homepage": "https://github.com/Frostdev7506/isValidVariable#readme",
-  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",

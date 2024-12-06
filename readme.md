@@ -11,7 +11,7 @@ A simple utility function to check if a variable is valid based on its type and 
 You can install `isValidVariable` using npm:
 
 ```sh
-npm install isValidVariable
+npm install isValidVariable.js
 ```
 
 ## Usage
@@ -21,13 +21,13 @@ To use the `isValidVariable` function in your project, you need to import it fir
 ### CommonJS
 
 ```javascript
-const isValidVariable = require("isvalidvariable");
+const isValidVariable = require("isvalidvariable.js");
 ```
 
 ### ES Modules
 
 ```javascript
-import isValidVariable from "isvalidvariable";
+import isValidVariable from 'isvalidvariable.js';
 ```
 
 # Functionality
